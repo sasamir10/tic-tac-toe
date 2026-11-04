@@ -1,3 +1,3 @@
-# @copyright
+# Owner
 
 Sabbir Ahmed Samir
