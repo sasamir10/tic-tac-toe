@@ -9,13 +9,13 @@ export default function Board() {
     let status;
 
     if (winner) {
-        status = `winner: ${winner}`;
+        status = `winner : ${winner}`;
     } else {
         status = "Next Player " + (isNext ? "X" : "O");
     }
 
     function clickedFunction(i) {
-        if (squares[i]) {
+        if (squares[i] || calculateWinners(squares)) {
             return false;
         }
 
