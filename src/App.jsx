@@ -55,8 +55,11 @@ function Board({ isNext, squares, onPlay }) {
 
     return (
         <>
-            <div>{status}</div>
-            <div className="flex">
+            <div className="mb-6 rounded-xl border border-slate-700 bg-slate-800 px-6 py-4 text-center font-mono text-xl font-bold uppercase tracking-widest text-cyan-400 shadow-lg">
+                {status}
+            </div>
+
+            <div className="flex justify-center">
                 <Square
                     value={squares[0]}
                     onSquareClick={() => clickedFunction(0)}
@@ -71,7 +74,7 @@ function Board({ isNext, squares, onPlay }) {
                 />
             </div>
 
-            <div className="flex">
+            <div className="flex justify-center">
                 <Square
                     value={squares[3]}
                     onSquareClick={() => clickedFunction(3)}
@@ -86,7 +89,7 @@ function Board({ isNext, squares, onPlay }) {
                 />
             </div>
 
-            <div className="flex">
+            <div className="flex justify-center">
                 <Square
                     value={squares[6]}
                     onSquareClick={() => clickedFunction(6)}
@@ -134,27 +137,34 @@ export default function Game() {
             description = `Start the game`;
         }
         return (
-            <li
-                key={move}
-                className="bg-gray-700 text-white mb-1 p-1 rounded-sm"
-            >
-                <button onClick={() => jumpTo(move)}>{description}</button>
+            <li key={move} className="mb-2 list-none">
+                <button
+                    onClick={() => jumpTo(move)}
+                    className="w-full rounded-lg bg-slate-700 px-4 py-3 text-left font-mono text-sm font-semibold tracking-wide text-slate-200 transition-all duration-200 hover:bg-cyan-500 hover:text-slate-950"
+                >
+                    {description}
+                </button>
             </li>
         );
     });
 
     return (
         <>
-            <div className="flex justify-center p-4">
-                <div className="mr-16">
+            <div className="flex min-h-screen flex-col items-center justify-center bg-slate-950 px-4 py-10 font-mono text-white md:flex-row md:gap-16">
+                <div className="mb-8 w-full max-w-sm md:mb-0">
                     <Board
                         isNext={isNext}
                         squares={currentSquares}
                         onPlay={handlePlay}
                     />
                 </div>
-                <div>
-                    <ol className="border border-gray-400 p-1 text-lg">
+
+                <div className="w-full max-w-sm rounded-2xl border border-slate-700 bg-slate-800 p-5 shadow-xl">
+                    <h2 className="mb-5 border-b border-slate-600 pb-3 font-mono text-xl font-bold uppercase tracking-widest text-cyan-400">
+                        Game History
+                    </h2>
+
+                    <ol className="max-h-80 space-y-1 overflow-y-auto">
                         {moves}
                     </ol>
                 </div>
