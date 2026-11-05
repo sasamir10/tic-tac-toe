@@ -32,11 +32,11 @@ A classic two-player Tic-Tac-Toe game built with **React** and **Tailwind CSS**.
 
 ## 🧰 Tech Stack
 
-- **React** — UI components and state management
-- **JavaScript (ES6+)** — game logic
-- **Tailwind CSS** — styling
-- **Vite** — development server and build tool
-- **Vercel** — deployment
+- **React** - UI components and state management
+- **JavaScript (ES6+)** - game logic
+- **Tailwind CSS** - styling
+- **Vite** - development server and build tool
+- **Vercel** - deployment
 
 ## 🚀 Getting Started
 
