@@ -17,7 +17,7 @@ A classic two-player Tic-Tac-Toe game built with **React** and **Tailwind CSS**.
 ## 🖼️ Screenshot
 
 <p align="center">
-  <img src="public/screenshot.png" alt="Tic-Tac-Toe game screenshot" width="800" />
+  <img width="1364" height="907" alt="tic-tac-toe" src="https://github.com/user-attachments/assets/1992d05b-7744-4144-9196-b75c6cfdd503" />
 </p>
 
 ## ✨ Features
