@@ -1,10 +1,7 @@
 import { useState } from "react";
 import Square from "./components/Square";
 
-export default function Board() {
-    const [squares, setSquares] = useState(Array(9).fill(null));
-    const [isNext, setIsNext] = useState(true);
-
+function Board({ isNext, squares, onPlay }) {
     const winner = calculateWinners(squares);
     let status;
 
@@ -27,8 +24,33 @@ export default function Board() {
             newSquares[i] = "O";
         }
 
-        setSquares(newSquares);
-        setIsNext(!isNext);
+        onPlay(newSquares);
+    }
+
+    function calculateWinners(squares) {
+        const lines = [
+            [0, 1, 2],
+            [3, 4, 5],
+            [6, 7, 8],
+            [0, 3, 6],
+            [1, 4, 7],
+            [2, 5, 8],
+            [0, 4, 8],
+            [2, 4, 6],
+        ];
+
+        for (let i = 0; i < lines.length; i++) {
+            const [a, b, c] = lines[i];
+
+            if (
+                squares[a] &&
+                squares[a] === squares[b] &&
+                squares[a] === squares[c]
+            ) {
+                return squares[a];
+            }
+        }
+        return null;
     }
 
     return (
@@ -82,28 +104,29 @@ export default function Board() {
     );
 }
 
-function calculateWinners(squares) {
-    const lines = [
-        [0, 1, 2],
-        [3, 4, 5],
-        [6, 7, 8],
-        [0, 3, 6],
-        [1, 4, 7],
-        [2, 5, 8],
-        [0, 4, 8],
-        [2, 4, 6],
-    ];
+export default function Game() {
+    const [history, setHistory] = useState([Array(9).fill(null)]);
+    const [isNext, setIsNext] = useState(true);
 
-    for (let i = 0; i < lines.length; i++) {
-        const [a, b, c] = lines[i];
+    const currentSquares = history[history.length - 1];
 
-        if (
-            squares[a] &&
-            squares[a] === squares[b] &&
-            squares[a] === squares[c]
-        ) {
-            return squares[a];
-        }
+    function handlePlay(newSquares) {
+        setIsNext(!isNext);
+        setHistory([...history, newSquares]);
     }
-    return null;
+
+    return (
+        <>
+            <div>
+                <Board
+                    isNext={isNext}
+                    squares={currentSquares}
+                    onPlay={handlePlay}
+                />
+            </div>
+            <div>
+                <ol>{/*TBD*/}</ol>
+            </div>
+        </>
+    );
 }
