@@ -115,6 +115,21 @@ export default function Game() {
         setHistory([...history, newSquares]);
     }
 
+    const moves = history.map((squares, move) => {
+        let description;
+
+        if (move > 0) {
+            description = `Go to move # ${move}`;
+        } else {
+            description = `Start the game`;
+        }
+        return (
+            <li>
+                <button>{description}</button>
+            </li>
+        );
+    });
+
     return (
         <>
             <div>
@@ -125,7 +140,7 @@ export default function Game() {
                 />
             </div>
             <div>
-                <ol>{/*TBD*/}</ol>
+                <ol>{moves}</ol>
             </div>
         </>
     );
