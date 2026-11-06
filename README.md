@@ -16,13 +16,7 @@ A classic two-player Tic-Tac-Toe game built with React, featuring interactive ga
 - Time-travel navigation to previous moves
 - Responsive dark arcade-style interface
 
-<<<<<<< HEAD
-<p align="center">
-  <img width="1364" height="907" alt="tic-tac-toe" src="https://github.com/user-attachments/assets/1992d05b-7744-4144-9196-b75c6cfdd503" />
-</p>
-=======
 ## Tech Stack
->>>>>>> 527165d (chore: finalize project and polish UI and documentation)
 
 - **Frontend:** React, JavaScript (ES6+)
 - **Styling:** Tailwind CSS
@@ -30,31 +24,11 @@ A classic two-player Tic-Tac-Toe game built with React, featuring interactive ga
 - **Deployment:** Vercel
 - **Version Control:** Git, GitHub
 
-<<<<<<< HEAD
-- 🎯 Interactive 3×3 game board
-- ❎ Two-player gameplay with alternating X and O turns
-- 🏆 Automatic winner detection
-- 🛡️ Prevents moves on occupied squares and after a winner is declared
-- 🕘 Game history tracking
-- ⏪ Time-travel navigation to revisit previous moves
-- 📱 Responsive interface with a dark arcade-inspired design
-
-## 🧰 Tech Stack
-
-- **React** - UI components and state management
-- **JavaScript (ES6+)** - game logic
-- **Tailwind CSS** - styling
-- **Vite** - development server and build tool
-- **Vercel** - deployment
-
-## 🚀 Getting Started
-=======
 ## Getting Started
->>>>>>> 527165d (chore: finalize project and polish UI and documentation)
 
-### Prerequisites
+and documentation)
+js
 
-- Node.js
 - npm
 
 ### Installation
