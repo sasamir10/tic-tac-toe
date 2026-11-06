@@ -1,27 +1,36 @@
 # Tic-Tac-Toe
 
-A classic two-player Tic-Tac-Toe game built with **React** and **Tailwind CSS**. Play as X or O, track the game progress, and revisit previous moves with the built-in history navigation.
+A classic two-player Tic-Tac-Toe game built with React, featuring interactive gameplay, winner detection, and move history navigation.
 
-<p align="center">
-  <a href="https://your-tic-tac-toe.vercel.app/">
-    <img src="https://img.shields.io/badge/Live_Demo-Play_Now-0EA5E9?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
-  </a>
-  <img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-Styling-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
-</p>
+![Tic-Tac-Toe Preview](./public/your-tic-tac-toe.vercel.app.png)
 
-## 🎮 Live Demo
+**Live Demo :** [Play Tic-Tac-Toe](https://your-tic-tac-toe.vercel.app/)
 
-**[Play Tic-Tac-Toe](https://your-tic-tac-toe.vercel.app/)**
+## Features
 
-## 🖼️ Screenshot
+- Interactive 3×3 game board
+- Two-player gameplay (X and O)
+- Automatic winner detection
+- Prevention of moves on occupied squares
+- Game history tracking
+- Time-travel navigation to previous moves
+- Responsive dark arcade-style interface
 
+<<<<<<< HEAD
 <p align="center">
   <img width="1364" height="907" alt="tic-tac-toe" src="https://github.com/user-attachments/assets/1992d05b-7744-4144-9196-b75c6cfdd503" />
 </p>
+=======
+## Tech Stack
+>>>>>>> 527165d (chore: finalize project and polish UI and documentation)
 
-## ✨ Features
+- **Frontend:** React, JavaScript (ES6+)
+- **Styling:** Tailwind CSS
+- **Build Tool:** Vite
+- **Deployment:** Vercel
+- **Version Control:** Git, GitHub
 
+<<<<<<< HEAD
 - 🎯 Interactive 3×3 game board
 - ❎ Two-player gameplay with alternating X and O turns
 - 🏆 Automatic winner detection
@@ -39,6 +48,9 @@ A classic two-player Tic-Tac-Toe game built with **React** and **Tailwind CSS**.
 - **Vercel** - deployment
 
 ## 🚀 Getting Started
+=======
+## Getting Started
+>>>>>>> 527165d (chore: finalize project and polish UI and documentation)
 
 ### Prerequisites
 
@@ -47,38 +59,73 @@ A classic two-player Tic-Tac-Toe game built with **React** and **Tailwind CSS**.
 
 ### Installation
 
-1. Clone the repository:
+Clone the repository:
 
-    ```bash
-    git clone https://github.com/sasamir10/tic-tac-toe.git
-    ```
+```bash
+git clone https://github.com/sasamir10/tic-tac-toe.git
+```
 
-2. Navigate to the project directory:
+Navigate to the project directory:
 
-    ```bash
-    cd tic-tac-toe
-    ```
+```bash
+cd tic-tac-toe
+```
 
-3. Install dependencies:
+Install dependencies:
 
-    ```bash
-    npm install
-    ```
+```bash
+npm install
+```
 
-4. Start the development server:
+### Run
 
-    ```bash
-    npm run dev
-    ```
+Start the development server:
 
-5. Open the local URL shown in your terminal.
+```bash
+npm run dev
+```
 
-## 📚 Learning Focus
+Open your browser and visit:
 
-This practice project follows the official React Tic-Tac-Toe tutorial and reinforces core React concepts, including components, props, state, event handling, lifting state up, and rendering lists.
+```text
+http://localhost:5173/
+```
 
-## 👤 Author
+## Project Structure
 
-**Samir**
+```text
+tic-tac-toe/
+├── public/
+├── src/
+│   ├── assets/
+│   │   └── icon.png
+│   ├── components/
+│   │   └── Square.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+└── vite.config.js
+```
 
-- GitHub: [@sasamir10](https://github.com/sasamir10)
+## Learning Objectives
+
+This project was built as a React practice project following the official React documentation, focusing on:
+
+- React components and props
+- State management with `useState`
+- Event handling
+- Conditional rendering
+- Lifting state up
+- Immutable state updates
+- Rendering lists using `map()`
+
+## Author
+
+**Sabbir Ahmed Samir**
+
+- GitHub : [@sasamir10](https://github.com/sasamir10)
+- LinkedIn : [Sabbir Ahmed Samir](https://linkedin.com/in/sabbirahmed10)
